@@ -1,0 +1,30 @@
+{
+  "name": "future-speedway",
+  "version": "0.1.0",
+  "description": "A brand new game, that will set your mind to focus on the far future.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qodeos/future-speedway.git"
+  },
+  "keywords": [
+    "future",
+    "speedway"
+  ],
+  "author": "futuredev <https://github.com/qodeos/future/speedway/issues>",
+  "license": "SEE LICENSE IN THE FILE \"LICENSE\".",
+  "bugs": {
+    "url": "https://github.com/qodeos/future-speedway/issues"
+  },
+  "homepage": "https://github.com/qodeos/future-speedway#readme",
+  "dependencies": {
+    "bad-words": "^3.0.4",
+    "express": "^4.18.1",
+    "helmet": "^5.1.0",
+    "pixi.js": "^6.4.2",
+    "readline-sync": "^1.4.10"
+  }
+}
