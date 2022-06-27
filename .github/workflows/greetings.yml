@@ -1,0 +1,16 @@
+name: Check to see if anyone is a first-time contributor
+
+on: [pull_request_target, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: "Hello, and welcome to issues! We will be with you in a few moments! While you are waiting, check out the [Contibutor License Agreement](https://github.com/qodeos/futuredev/contributor_license_agreement.txt)."
+        pr-message: "Did you just submit a change to my code? That is very silly. (Just joking. Welcome to Changes! I can review the code and submit it for you once I check the pull requests section.)"
